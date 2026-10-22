@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Casa de Puff | Aluguel de Puff para Eventos em São Paulo</title>
+    <meta name="description"
+        content="Locação de puffs, poltronas e sofás para festas, casamentos, eventos corporativos e lounges em São Paulo. Peça seu orçamento pelo WhatsApp.">
+    <meta name="keywords"
+        content="aluguel de puff para eventos, locação de puffs em São Paulo, aluguel de puff para festas, locação de sofás e poltronas para eventos, aluguel de móveis para lounge">
+    <link rel="canonical" href="http://www.casadepuff.com.br/">
+    <meta property="og:title" content="O conforto que seu evento merece">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="w"><a class="logo" href="#topo">Casa de Puff</a>
+            <nav><a href="#catalogo">Produtos</a><a href="#eventos">Eventos</a><a href="#como">Como funciona</a><a
+                    href="#galeria">Galeria</a><a href="#avaliacoes">Avaliações</a><a class="keep"
+                    href="#orcamento">Orçamento</a></nav>
+        </div>
+    </header>
+
+    <main id="topo">
+        <section class="hero">
+            <div class="w">
+                <h1 style="font-size:clamp(2.2rem,6vw,4rem)">O conforto que seu evento merece!</h1>
+                <p>Aluguel de puffs e móveis para transformar seu evento em uma experiência confortável, bonita e
+                    inesquecível.</p>
+                <a class="btn" href="#catalogo">Ver nossos produtos</a><a class="btn o" id="waHero" href="#"
+                    target="_blank" rel="noopener">Solicitar orçamento pelo WhatsApp</a>
+            </div>
+        </section>
+
+        <section class="alt" id="diferenciais">
+            <div class="w">
+                <h2>Por que alugar com a gente</h2>
+                <div class="grid" id="difs"></div>
+            </div>
+        </section>
+
+        <section id="catalogo">
+            <div class="w">
+                <h2>Catálogo de produtos</h2>
+                <p style="color:var(--mut)">Sem preço fixo: o orçamento é personalizado conforme modelo, quantidade,
+                    data e local do evento.</p>
+                <div class="grid" id="prods"></div>
+            </div>
+        </section>
+
+        <section class="alt" id="eventos">
+            <div class="w">
+                <h2>Eventos que atendemos</h2>
+                <div class="grid" id="evs"></div>
+            </div>
+        </section>
+
+        <section id="como">
+            <div class="w">
+                <h2>Como funciona a locação</h2>
+                <div class="steps">
+                    <div>
+                        <h3>Escolha</h3>
+                        <p>Escolha os modelos e a quantidade de puffs.</p>
+                    </div>
+                    <div>
+                        <h3>Informe</h3>
+                        <p>Informe a data, o endereço e o tipo de evento.</p>
+                    </div>
+                    <div>
+                        <h3>Receba</h3>
+                        <p>Receba seu orçamento personalizado.</p>
+                    </div>
+                    <div>
+                        <h3>Confirme</h3>
+                        <p>Confirme a locação e combine a entrega e a retirada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt" id="sobre">
+            <div class="w" style="max-width:760px">
+                <h2>Sobre a empresa</h2>
+                <p>Oferecemos soluções em locação de puffs e mobiliário para eventos de diferentes estilos e tamanhos.
+                    Nosso objetivo é proporcionar conforto, praticidade e uma apresentação impecável, ajudando cada
+                    cliente a criar um ambiente agradável para seus convidados.</p>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <div class="w">
+                <h2>Galeria</h2>
+                <div class="grid" id="gal"></div>
+            </div>
+        </section>
+
+        <section class="alt" id="avaliacoes">
+            <div class="w">
+                <h2>Avaliações de clientes</h2>
+                <p class="demo">Conteúdo demonstrativo: substitua por avaliações reais no painel.</p>
+                <div class="grid" id="revs"></div>
+            </div>
+        </section>
+
+        <section id="orcamento">
+            <div class="w">
+                <h2>Solicite seu orçamento</h2>
+                <form id="f">
+                    <div class="r2"><label>Nome<input name="nome" required autocomplete="name"></label><label>Telefone
+                            para contato<input name="tel" type="tel" required autocomplete="tel"></label></div>
+                    <div class="r2"><label>Tipo de evento<select name="tipo">
+                                <option>Aniversário</option>
+                                <option>Casamento</option>
+                                <option>Evento empresarial</option>
+                                <option>Feira ou exposição</option>
+                                <option>Formatura</option>
+                                <option>Festa universitária</option>
+                                <option>Sítio ou salão</option>
+                                <option>Festa particular</option>
+                                <option>Camarote ou área VIP</option>
+                            </select></label><label>Data do evento<input name="data" type="date" required></label></div>
+                    <label>Endereço ou região<input name="end" required></label>
+                    <div class="r2"><label>Produtos desejados<input name="prod" id="prodIn"
+                                placeholder="Ex.: puff pera, sofá" required></label><label>Quantidade de unidades<input
+                                name="qtd" type="number" min="1" required></label></div>
+                    <label>Observações adicionais<textarea name="obs" rows="3"></textarea></label>
+                    <button class="btn" type="submit">Solicitar orçamento</button><small id="msg" role="status"></small>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="w">
+            <div class="grid">
+                <div>
+                    <div class="logo">Casa de Puff</div>
+                    <p>Locações para festas e eventos: puffs, poltronas, sofás, mesas e cadeiras em São Paulo.</p>
+                </div>
+                <div><b>Seções</b><a href="#catalogo">Produtos</a><a href="#eventos">Eventos</a><a
+                        href="#galeria">Galeria</a><a href="#orcamento">Orçamento</a></div>
+                <div><b>Contato</b><a id="waFoot" href="#" target="_blank" rel="noopener">WhatsApp</a><a id="ig"
+                        href="#" target="_blank" rel="noopener">Instagram @casadepuff</a><a
+                        href="http://www.casadepuff.com.br/" target="_blank"
+                        rel="noopener">www.casadepuff.com.br</a><span>Tel.: (11) 3418-8354 / (11) 2079-4977 / (11)
+                        93011-8741</span><span>Rua Capitania de Itamaracá, 790 – Vl. Carmosina – Itaquera –
+                        SP</span><span>Regiões atendidas: São Paulo e arredores</span></div>
+                <div><b>Legal</b><a href="#priv"
+                        onclick="alert('Inclua aqui a Política de Privacidade da empresa (LGPD).')">Política de
+                        privacidade</a><a href="#" id="admBtn">Área administrativa</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <a class="wa" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WhatsApp</a>
+
+    <div id="adm">
+        <div>
+            <h3>Painel administrativo</h3>
+            <div id="login"><label>Senha<input type="password" id="pw"></label><br><button class="btn"
+                    id="go">Entrar</button>
+                <p class="demo">Proteção apenas local, para demonstração. Em produção, use login de servidor.</p>
+            </div>
+            <div id="panel" hidden>
+                <label>WhatsApp da empresa (DDI+DDD+número)<input id="cfgWa" placeholder="5511999999999"></label>
+                <label>Instagram (link)<input id="cfgIg" placeholder="https://instagram.com/suaempresa"></label>
+                <h4>Produtos</h4>
+                <div id="plist"></div>
+                <label>Novo produto: nome<input id="pn"></label><label>Descrição<input
+                        id="pd"></label><label>Cores<input id="pc"></label><label>URL da foto<input id="pi"></label>
+                <br><button class="btn" id="add">Adicionar produto</button> <button class="btn"
+                    id="save">Salvar</button> <button class="btn" id="close">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
